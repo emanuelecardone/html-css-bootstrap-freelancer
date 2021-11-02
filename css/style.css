@@ -21,12 +21,17 @@ img{
 }
 
 h1,
-h2,
 h3,
 h4,
 ul{
     text-transform: uppercase;
     color: white;
+}
+
+h2{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* HEADER */
@@ -97,8 +102,11 @@ header ul{
 }
 
 .fa-star{
-    color: white;
     font-size: 30px;
+}
+
+.white_star{
+    color: white;
 }
 
 .left_line{
@@ -116,13 +124,12 @@ header ul{
     align-items: center;
 }
 
-.star_row_wrapper{
-    display: flex;
-}
-
 .fake_line{
     height: 4px;
     border-radius: 5px;
+}
+
+.white_line{
     background-color: white;
 }
 
@@ -132,23 +139,45 @@ header ul{
     align-items: center;
 }
 
-.star_line_container{
-    display: flex;
-    justify-content: center;
-}
 
 @media screen and (min-width: 768px){
     h1{
         font-size: 60px;
     }   
+    
 }
 
-@media screen and (min-width: 992px) {
+ @media screen and (min-width: 992px) {
     .stop_growing{
-        max-width: 800px;
+        max-width: 850px;
     } 
+} 
+
+/* Portfolio */
+.portfolio_wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    gap: 30px;
 }
+
+.black_star{
+    color: black;
+}
+
+.black_line{
+    background-color: black;
+}
+
+.bigger_img_wrapper img{
+    border-radius: 10px;
+}
+
 /* TEST */
 /* div:not(.burger_borders){
     border: 1px solid white;
 }   */
+
+/* .row{
+    border: 1px solid black;
+} */
