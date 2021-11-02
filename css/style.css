@@ -9,6 +9,7 @@ ul{
 li, 
 a{
     display: inline-block;
+    vertical-align: middle;
 }
 
 a{
@@ -33,9 +34,14 @@ h3{
 }
 
 @media screen  and (min-width: 768px){
+    .h3,
+    a{
+        line-height: 100px;  
+    } 
+    
     h3{
-        margin-bottom: .5rem;
-    } /* Per farlo stare in linea con il burger menù e poi tornare in linea con la ul sopra i 768px */
+        margin-bottom: .25rem;
+    }/* Per farlo stare in linea con il burger menù e poi tornare in linea con la ul sopra i 768px */
 }
 
 h2{
@@ -180,6 +186,11 @@ header ul{
 
 .bigger_img_wrapper img{
     border-radius: 10px;
+}
+
+/* About */
+.about_wrapper{
+    background-color: #1abc9c;
 }
 
 /* TEST */
