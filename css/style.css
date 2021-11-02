@@ -159,6 +159,10 @@ header ul{
     h1{
         font-size: 60px;
     }   
+
+    h2{
+        font-size: 50px;
+    }
     
 }
 
@@ -198,7 +202,8 @@ header ul{
 }
 
 .paragraph,
-.download_wrapper span{
+.download_wrapper span,
+.send_wrapper span{
     color: white;
     font-size: 20px;
 }
@@ -210,14 +215,54 @@ header ul{
     color: white; 
 }
 
-.about_content{
+.about_content,
+.contact_content{
     width: 50%;
 }
 
 @media screen and (min-width: 768px){
-    .about_content{
+    .about_content,
+    .contact_content{
         width: 75%;
     }
+}
+
+/* Contact */
+.contact_row_wrapper{
+    font-size: 20px;
+}
+
+.contact_row_wrapper:not(.no_border){
+    border-bottom: 1px solid grey;
+}
+
+.fa-grip-lines{
+    transform: rotate(330deg);
+}
+
+.big_margin{
+    margin-top: 130px;
+}
+
+.green_button{
+    background-color: #1abc9c;
+}
+
+@media  screen and (min-width: 992px){
+    .padding_fix{
+        padding-left: 3rem;
+    }
+
+    
+    .stop_growing_2{
+         max-width: 600px;
+    } 
+    
+    
+}
+
+.send_wrapper{
+    
 }
 
 /* TEST */
