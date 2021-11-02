@@ -132,7 +132,22 @@ header ul{
     align-items: center;
 }
 
+.star_line_container{
+    display: flex;
+    justify-content: center;
+}
 
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 60px;
+    }   
+}
+
+@media screen and (min-width: 992px) {
+    .stop_growing{
+        max-width: 800px;
+    } 
+}
 /* TEST */
 /* div:not(.burger_borders){
     border: 1px solid white;
