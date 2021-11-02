@@ -193,6 +193,33 @@ header ul{
     background-color: #1abc9c;
 }
 
+.about_title h2{
+    color: white;
+}
+
+.paragraph,
+.download_wrapper span{
+    color: white;
+    font-size: 20px;
+}
+
+.border_wrapper{
+    gap: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white; 
+}
+
+.about_content{
+    width: 50%;
+}
+
+@media screen and (min-width: 768px){
+    .about_content{
+        width: 75%;
+    }
+}
+
 /* TEST */
 /* div:not(.burger_borders){
     border: 1px solid white;
