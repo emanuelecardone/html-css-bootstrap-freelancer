@@ -214,6 +214,7 @@ header ul{
     border-color: white;
     font-size: 20px;
     border-radius: 7px;
+    min-width: 180px;
 }
 
 .about_content,
