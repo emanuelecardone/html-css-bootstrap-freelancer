@@ -113,6 +113,10 @@ header ul{
     padding: 40px 0;
 }
 
+.jumbo_menu h4{
+    font-size: 20px;
+}
+
 .avatar_container{
     width: 300px;
 }
@@ -167,11 +171,13 @@ header ul{
     
 }
 
- @media screen and (min-width: 992px) {
+ @media screen and (min-width: 768px) {
     .stop_growing{
         max-width: 500px;
     } 
 } 
+
+
 
 /* Portfolio */
 .portfolio_wrapper{
