@@ -230,11 +230,6 @@ header ul{
 }
 
 /* Contact */
-.contact_row_wrapper{
-    font-size: 20px;
-}
-
-
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -250,6 +245,10 @@ input[type="number"]:focus,
 textarea.form-control:focus{
     box-shadow: none;
     border-bottom: 1px solid grey;
+}
+
+button[type="button"]:focus{
+    box-shadow: none;
 }
 
 .big_margin{
