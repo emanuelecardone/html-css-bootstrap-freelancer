@@ -261,9 +261,66 @@ header ul{
     
 }
 
-.send_wrapper{
+/* Location */
+.location_wrapper{
+    background-color: #3a546d;
+}
+
+.location_content{
+    width: 90%;
+}
+
+.location_text{
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 23px;
+}
+
+.location_icons_wrapper{
+    
+    width: 50px;
+    height: 50px;
     
 }
+
+.location_icons_box{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.no_padding{
+    padding: 0;
+}
+
+.no_grow{
+    width: 400px;
+    margin: auto;
+}
+
+.gap_fix{
+    gap: 10px;
+}
+
+
+@media  screen and (min-width: 768px) {
+    .no_grow{
+        width: 280px;
+        margin: 0;
+    }
+
+    .gap_fix{
+        gap: 0;
+    }
+}
+
+
+.green_location_text{
+    color: #1bb89a;
+}
+
 
 /* TEST */
 /* div:not(.burger_borders){
