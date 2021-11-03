@@ -215,11 +215,15 @@ header ul{
     font-size: 20px;
 }
 
-.border_wrapper{
-    gap: 3px;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white; 
+.download_wrapper .btn{
+    padding: .5rem 1rem;
+}
+
+.download_wrapper .btn-success{
+    background: none;
+    border-color: white;
+    font-size: 20px;
+    border-radius: 7px;
 }
 
 .about_content,
@@ -239,35 +243,47 @@ header ul{
     font-size: 20px;
 }
 
-.contact_row_wrapper:not(.no_border){
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea.form-control{
+    border: 0;
     border-bottom: 1px solid grey;
+    border-radius: 0;
 }
 
-.fa-grip-lines{
-    transform: rotate(330deg);
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea.form-control:focus{
+    box-shadow: none;
+    border-bottom: 1px solid grey;
 }
 
 .big_margin{
     margin-top: 130px;
 }
 
-.green_button{
-    background-color: #1abc9c;
-}
-
 @media  screen and (min-width: 992px){
-    .padding_fix{
-        padding-left: 3rem;
-    }
-
-    
     .stop_growing_2{
          max-width: 700px;
          min-width: 500px;
     } 
     
-    
 }
+
+.contact_button_wrapper .btn-success{
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.contact_button_wrapper .btn{
+    padding: .6rem 1rem;
+}
+
 
 /* Location */
 .location_wrapper{
