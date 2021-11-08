@@ -4,155 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Bootstrap Freelancer</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/frameworksizespace.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
+
 <body>
     
+
     <!-- HEADER -->
     <header>
-        <div class="header_wrapper h-100 w-100">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-10 offset-md-1 col-md-5 col-lg-5 ">
-                        <div class="header_title h-100 d-md-flex justify-content-md-center align-items-md-center">
-                            <h3>start bootstrap</h3>
+
+        <!-- Navbar -->
+        <div class="navbar_main_wrapper">
+            <nav class="navbar navbar-expand-md navbar-dark py-4">
+                <div class="container-md">
+                    <a class="navbar-brand text-white text-uppercase" href="#"><h3 class="fs-5 mb-0">start bootstrap</h3></a>
+                    
+                    <!-- Collapse -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-white text-uppercase" href="#">Portfolio</a>
+                            <a class="nav-link text-white text-uppercase" href="#">About</a>
+                            <a class="nav-link text-white text-uppercase" href="#">Contact</a>
                         </div>
                     </div>
-                    <div class="col-2 offset-md-1 col-md-4 d-lg-flex justify-content-lg-center offset-lg-0 col-lg-5">
-                        <div class="burger_menu d-md-none h-100">
-                            <div class="burger_borders w-50">
-                                <i class="fas fa-bars"></i>
-                            </div>
-                        </div>
-                        <div class="header_menu d-none d-md-flex h-100">
-                            <ul class="menu_list w-100 justify-content-start justify-content-lg-end">
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                    <!-- Burger -->
+                    <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>      
+            </nav>
         </div>
+
     </header>
 
     <!-- MAIN -->
     <main>
 
-
         <!-- Jumbotron -->
-        <div class="jumbotron_wrapper w-100">
-            <div class="avatar_container">
-                <img src="img/avatar.svg" alt="Immagine che raffigura un avatar">
-            </div>
-            <div class="main_title">
-                <h1>start bootstrap</h1>
-            </div>
-            <div class="w-100 star_row_wrapper">
-                <div class="container-fluid">
-                    <div class="row  justify-content-center">
-                        <div class="col-5 col-md-7 stop_growing">
-                            <div class="row justify-content-center">
-                                <div class="left_line col-4 col-lg-5">
-                                    <div class="fake_line_wrapper h-100">
-                                        <div class="fake_line white_line w-100"></div>
-                                    </div>
+        <div class="jumbo_main_wrapper">
+            <div class="container">
+                <div class="row flex-column justify-content-around gy-4 py-4 py-md-5">
+                    <div class="offset-3 col-6">
+                        <div class="jumbo_img_box d-flex justify-content-center">
+                            <img class="jumbo_img" style="width: 250px; max-width: 250px;" src="img/avatar.svg" alt="Immagine che rappresenta un avatar">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="jumbo_title_box">
+                            <h1 class="text-white text-uppercase text-center">start bootstrap</h1>
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 ">
+                        <div class="row justify-content-center gx-0">
+                            <div class="col-5">
+                                <div class="left_line_box h-100 d-flex justify-content-end align-items-center">
+                                    <div class="line bg-white rounded-pill w-100" style="max-width: 150px; height: 4px;"></div>
                                 </div>
-                                <div class="col-1 gx-4 gx-md-5">
-                                    <div class="star_container">
-                                        <i class="fas fa-star white_star"></i>
-                                    </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="star_box d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-star text-white" style="font-size: 30px;"></i>
                                 </div>
-                                <div class="right_line col-4 col-lg-5">
-                                    <div class="fake_line_wrapper h-100">
-                                        <div class="fake_line white_line w-100"></div>
-                                    </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="right_line_box h-100 d-flex align-items-center">
+                                    <div class="line bg-white rounded-pill w-100" style="max-width: 150px; height: 4px;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>    
-            <div class="jumbo_menu">
-                <div class="container-fluid">
-                    <div class="row row-cols-1">
-                        <div class="col">
-                            <h4>graphic artist - web designer - illustrator</h4>
+                    <div class="col-12">
+                        <div class="jumbo_subtitle_box">
+                            <h3 class="text-white text-uppercase text-center mb-md-4">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Portfolio -->
-        <div class="portfolio_wrapper w-100 mt-5">
-
-            <h2>portfolio</h2>
-            <div class="w-100 star_row_wrapper">
-                <div class="container-fluid">
-                    <div class="row  justify-content-center">
-                        <div class="col-5 col-md-7 stop_growing">
-                            <div class="row justify-content-center">
-                                <div class="left_line col-4 col-lg-5">
-                                    <div class="fake_line_wrapper h-100">
-                                        <div class="fake_line black_line w-100"></div>
-                                    </div>
+        <div class="portfolio_main_wrapper mt-5 pt-md-4">
+            <div class="container">
+                <div class="row flex-column gy-4">
+                    <div class="col-12">
+                        <div class="row flex-column">
+                            <div class="col-12">
+                                <div class="jumbo_title_box">
+                                    <h2 class="text-black text-uppercase text-center mb-4">Portfolio</h2>
                                 </div>
-                                <div class="col-1 gx-4 gx-md-5">
-                                    <div class="star_container">
-                                        <i class="fas fa-star black_star"></i>
+                            </div>
+                            <div class="offset-3 col-6 ">
+                                <div class="row justify-content-center gx-0">
+                                    <div class="col-5">
+                                        <div class="left_line_box h-100 d-flex justify-content-end align-items-center">
+                                            <div class="line bg-dark rounded-pill w-100" style="max-width: 150px; height: 4px;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="right_line col-4 col-lg-5">
-                                    <div class="fake_line_wrapper h-100">
-                                        <div class="fake_line black_line w-100"></div>
+                                    <div class="col-2">
+                                        <div class="star_box d-flex justify-content-center align-items-center">
+                                            <i class="fas fa-star text-black" style="font-size: 30px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="right_line_box h-100 d-flex align-items-center">
+                                            <div class="line bg-dark rounded-pill w-100" style="max-width: 150px; height: 4px;"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class=" col-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10">
-                        <div class="images_row_wrapper">
-                            <div class="row flex-column flex-md-row">
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/cabin.png" alt="Immagine con una cabina di legno">
-                                    </div>
+                    <div class="col-12">
+                        <div class="row gy-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/cabin.png" alt="Immagine raffigurante una cabina">
                                 </div>
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/cake.png" alt="Immagine con una fetta di torta">          
-                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/cake.png" alt="Immagine raffigurante una torta">
                                 </div>
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/circus.png" alt="Immagine con un circo">      
-                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/circus.png" alt="Immagine raffigurante un circo">
                                 </div>
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/game.png" alt="Immagine con un joystick">
-                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/game.png" alt="Immagine raffigurante un joystick">
                                 </div>
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/safe.png" alt="Immagine con una cassaforte">
-                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/safe.png" alt="Immagine raffigurante una cassaforte">
                                 </div>
-                                <div class="col-12 gx-5 gy-4 col-md-6  g-md-4 col-lg-4 g-lg-3 ">
-                                    <div class="bigger_img_wrapper">
-                                        <img src="img/submarine.png" alt="Immagine con un sottomarino">
-                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="portfolio_img_box">
+                                    <img class="img-fluid" src="img/submarine.png" alt="Immagine raffigurante un sottomarino">
                                 </div>
                             </div>
                         </div>
@@ -160,147 +158,111 @@
                 </div>
             </div>
         </div>
-
 
         <!-- About -->
-        <div class="about_wrapper w-100 d-flex justify-content-center mt-5">
-            <div class="about_content">
-                <div class="container-fluid">
-                    <div class="row flex-column">
-                        <div class="about_title mt-5">
-                            <h2>about</h2>
+        <div class="about_main_wrapper text-white mt_60 py-4 pb-md-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about_title_box mt_30">
+                            <h2 class="text-uppercase text-center mb-4 mt-md-4">about</h2>
                         </div>
-                        <div class="w-100 star_row_wrapper my-4">
-                            <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                    <div class="col-10 col-md-12 stop_growing_2">
-                                        <div class="row justify-content-center">
-                                            <div class="left_line col-4 col-md-3">
-                                                <div class="fake_line_wrapper h-100">
-                                                    <div class="fake_line white_line w-100"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-1 gx-4 gx-md-1">
-                                                <div class="star_container">
-                                                    <i class="fas fa-star white_star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="right_line col-4 col-md-3">
-                                                <div class="fake_line_wrapper h-100">
-                                                    <div class="fake_line white_line w-100"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="offset-3 col-6">
+                        <div class="row justify-content-center gx-0">
+                            <div class="col-5">
+                                <div class="left_line_box h-100 d-flex justify-content-end align-items-center">
+                                    <div class="line bg-white rounded-pill w-75" style="max-width: 120px; height: 4px;"></div>
                                 </div>
                             </div>
-                        </div>           
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <div class="container-fluid">
-                        <div class="row flex-column flex-md-row">
-                          <div class="col-12 col-md-6">
-                            <div class="paragraph_wrapper mb-4 mb-md-0">
-                                <p class="paragraph">Freelancer is a bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                            <div class="col-2">
+                                <div class="star_box d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-star text-white" style="font-size: 30px;"></i>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="paragraph_wrapper">
-                                <p class="paragraph">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                            <div class="col-5">
+                                <div class="right_line_box h-100 d-flex align-items-center">
+                                    <div class="line bg-white rounded-pill w-75" style="max-width: 120px; height: 4px;"></div>
+                                </div>
                             </div>
-                          </div>                      
                         </div>
                     </div>
-                </div>
-                <div class="w-100 my-5">
-                    <div class="container-fluid">
-                        <div class="row justify-content-center">
-                          <div class="col-6 col-md-3">
-                            <div class="download_wrapper w-100 d-flex justify-content-center align-items-center">
-                                <button type="button" class="btn btn-success"><i class="fas fa-download"></i> Download</button>
-                            </div>
-                          </div>                     
+                    <div class="offset-3 col-6 offset-md-2 col-md-4 offset-lg-1 col-lg-5">
+                        <div class="about_paragraph_box mt-4 mb-md-4">
+                            <p class="paragraph" style="font-size: 20px;">Freelancer is a bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 offset-md-0 col-md-4 col-lg-5">
+                        <div class="about_paragraph_box mt-1 mb-4 mt-md-4">
+                            <p class="paragraph" style="font-size: 20px;">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="about_button_box mt-4 mt-md-2 text-center">
+                            <button type="button" class="btn btn-success bg-transparent border-white mb_5" style="padding: .5rem 1rem; box-shadow: none;"><i class="fas fa-download"></i> Download</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <!-- Contact -->
-        <div class="contact_wrapper w-100 d-flex justify-content-center mt-5">
-            <div class="contact_content">
-                <div class="container-fluid">
-                    <div class="row flex-column">
-                        <div class="contact_title">
-                            <h2>contact me</h2>
-                        </div>
-                        <div class="w-100 star_row_wrapper my-4">
-                            <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                    <div class="col-10 col-md-12 stop_growing_2">
-                                        <div class="row justify-content-center">
-                                            <div class="left_line col-4 col-md-3">
-                                                <div class="fake_line_wrapper h-100">
-                                                    <div class="fake_line black_line w-100"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-1 gx-4 gx-md-1">
-                                                <div class="star_container">
-                                                    <i class="fas fa-star black_star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="right_line col-4 col-md-3">
-                                                <div class="fake_line_wrapper h-100">
-                                                    <div class="fake_line black_line w-100"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>           
+        <div class="contact_main_wrapper text-black py-4  pb-md-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about_title_box">
+                            <h2 class="text-uppercase text-center mt_30 mb-4 mt-md-4">contact me</h2>
+                        </div>              
                     </div>
-                </div>
-                <div class="mb-3">
-                    <div class="container-fluid">
-                        <div class="row row-cols-1">
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="customer-name" class="form-label sr-only"></label>
-                                    <input type="text" class="form-control pb-3" id="customer-name" placeholder="Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="customer-email" class="form-label sr-only"></label>
-                                    <input type="email" class="form-control pb-3" id="customer-name" placeholder="Email Address">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="customer-number" class="form-label sr-only"></label>
-                                    <input type="number" class="form-control pb-3" id="customer-name" placeholder="Phone Number">
+                    <div class="offset-3 col-6">
+                        <div class="row justify-content-center gx-0">
+                            <div class="col-5">
+                                <div class="left_line_box h-100 d-flex justify-content-end align-items-center">
+                                    <div class="line bg-dark rounded-pill w-75" style="max-width: 120px; height: 4px;"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-4">
-                            <div class="row row-cols-1">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-                                        <label for="floatingTextarea2">Message</label>
-                                    </div>
+                            <div class="col-2">
+                                <div class="star_box d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-star" style="font-size: 30px;"></i>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="right_line_box h-100 d-flex align-items-center">
+                                    <div class="line bg-dark rounded-pill w-75" style="max-width: 120px; height: 4px;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mb-5">
-                    <div class="container-fluid">
-                        <div class="row">    
-                            <div class="col-4 col-md-2">
-                                <div class="contact_button_wrapper no_border">
-                                    <button type="button" class="btn btn-success">Send</button>
-                                </div>
+                    <div class="offset-3 col-6 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
+                        <div class="contact_name_box mt-4 mb-3">
+                            <label for="customer-name" class="form-label sr-only"></label>
+                            <input type="text" class="form-control pb-3" id="customer-name" placeholder="Name" style="border: none; border-bottom: 1px solid #ced4da;">
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
+                        <div class="contact_email_box mb-3">
+                            <label for="customer-email" class="form-label sr-only"></label>
+                            <input type="email" class="form-control pb-3" id="customer-name" placeholder="Email Address" style="border: none; border-bottom: 1px solid #ced4da;">
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
+                        <div class="contact_number_box mb-3">
+                            <label for="customer-number" class="form-label sr-only"></label>
+                            <input type="number" class="form-control pb-3" id="customer-name" placeholder="Phone Number" style="border: none; border-bottom: 1px solid #ced4da;">
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
+                        <div class="contact_message_box mt-4">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px; border: none; border-bottom: 1px solid #ced4da;"></textarea>
+                                <label for="floatingTextarea2">Message</label>
                             </div>
+                        </div>
+                    </div>
+                    <div class="offset-3 col-6 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
+                        <div class="contact_button_box mt-3 ">
+                            <button type="button" class="btn btn-success mb_5" style="background-color: #1abc9c; border: none; padding: .5rem 1rem; font-size: 18px;">Send</button>
                         </div>
                     </div>
                 </div>
@@ -308,59 +270,41 @@
         </div>
 
         <!-- Location -->
-        <div class="location_wrapper w-100 d-flex justify-content-center">
-            <div class="location_content">
-                <div class="container-fluid">
-                    <div class="row flex-column flex-md-row justify-content-md-between">
-                        <div class="col-12 col-md-3">
-                            <div class="location_text d-flex flex-column justify-content-md-between">
-                                <h4>location</h4>
-                                <span>2215 John Daniel Drive Clark, MO 54243</span>
-                            </div>
+        <div class="location_main_wrapper text-white pt_50 pb_60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="location_box text-center mb_40">
+                            <h3 class="text-uppercase">location</h3>
+                            <span>2215 John Daniel Drive Clark, MO 54243</span>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="location_text w-100  d-flex justify-content-center">
-                                <div class="location_icons">
-                                    <h4>around the web</h4>
-                                    <div class="row justify-content-center row-cols-4">
-                                        <div class="col">
-                                            <div class="location_icons_wrapper d-flex justify-content-center w-100 h-100">
-                                                <div class="location_icons_box d-flex justify-content-center align-items-center ">
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="location_icons_wrapper d-flex justify-content-center w-100 h-100 ">
-                                                <div class="location_icons_box d-flex justify-content-center align-items-center ">
-                                                    <i class="fab fa-google-plus-g"></i>
-                                                </div>  
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="location_icons_wrapper d-flex justify-content-center w-100 h-100">
-                                                <div class="location_icons_box d-flex justify-content-center align-items-center ">
-                                                    <i class="fab fa-twitter"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="location_icons_wrapper d-flex justify-content-center w-100 h-100">
-                                                <div class="location_icons_box d-flex justify-content-center align-items-center ">
-                                                    <i class="fab fa-linkedin-in"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location_box text-center">
+                            <h3 class="text-uppercase">around the web</h3>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <div class="location_text">
-                                <h4>about freelancer</h4>
-                                <span>Freelance is a free to use, open source Bootstrap theme created by <span class="green_location_text">Start Bootstrap</span>.</span>
-                            </div>
-                        </div>
+                        <div class="location_social_box d-flex justify-content-center mb_40">
+                            <ul class="social_list d-flex justify-content-center">
+                                <li class="rounded-circle w_45p h_45p d-flex justify-content-center align-items-center">
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li class="rounded-circle w_45p h_45p d-flex justify-content-center align-items-center">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li class="rounded-circle w_45p h_45p d-flex justify-content-center align-items-center">
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li class="rounded-circle w_45p h_45p d-flex justify-content-center align-items-center">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>  
+                            </ul>
+                        </div>               
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location_box text-center">
+                            <h3 class="text-uppercase">about freelancer</h3>
+                            <span>Freelance is a free to use, open source Bootstrap theme created by <span class="green_span">Start Bootstrap</span>.</span>
+                        </div>           
                     </div>
                 </div>
             </div>
@@ -368,19 +312,18 @@
         
     </main>
 
-    <!-- FOOTER -->
 
-    <footer class="w-100">
-        <div class="container-fluid">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <div class="final_title_wrapper">
-                        <span>Copyright <i class="far fa-copyright"></i> Your Website 2019</span>
-                    </div>
+    <!-- FOOTER -->
+    <footer class="text-center text-white pt_50 pb_60">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span>Copyright © your website 2019</span>
                 </div>
             </div>
         </div>
     </footer>
+
 
 </body>
 </html>
